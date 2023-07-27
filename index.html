@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Reproductor perrón</title>
+</head>
+
+<body>
+  <div class="player">
+    <div class="player__header">
+      <div class="player__img player__img--absolute slider">
+        <button class="player__button player__button--absolute--nw playlist">
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon" />
+        </button>
+        <button class="player__button player__button--absolute--center play">
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon" />
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon" />
+        </button>
+        <div class="slider__content">
+          <img class="img slider__img" src="Imagenes/Danzar.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Not About Angels.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Jackie Brown.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/That's what I like.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Viva la vida.webp" alt="cover" />
+          <img class="img slider__img" src="Imagenes/GodPlan.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Negro Cirilo.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/I dont want to set the world on Fire.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Believer.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/506.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Dead.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Drivers License.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/La leyenda del hada y el mago.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Youtiful.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Young Beautiful.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/She loves me not.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Devuelveme.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Una Locura.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Sunflower.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Quedate.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Falling in love.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Enemy_Imagine_Dragons.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Vale la pena.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Las Monjitas.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Uptown funk.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Snowman.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/Real Slim Shady.jpg" alt="cover" />
+          <img class="img slider__img" src="Imagenes/ChopSueyEurope.jpg" alt="cover" />
+        </div>
+      </div>
+
+      <div class="player__controls">
+        <button class="player__button back">
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon" />
+        </button>
+        <p class="player__context slider__context">
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+        </p>
+        <button class="player__button next">
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon" />
+        </button>
+        <div class="progres">
+          <div class="progres__filled"></div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="player__playlist list">
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Danzar.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">A Danzar</b>
+          <span class="flex">
+            <span class="player__title">Radical</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Barak ft Redimi2   A Danzar  Video Oficial  Radical Live.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Not About Angels.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Not About Angels</b>
+          <span class="flex">
+            <span class="player__title">Birdy  </span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Birdy  Not About Angels from The Fault In Our Stars Soundtrack Official Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Jackie Brown.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Brent Faiyaz</b>
+          <span class="flex">
+            <span class="player__title">JACKIE BROWN</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Brent Faiyaz  JACKIE BROWN Official Audio.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/That's what I like.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Thats What I Like</b>
+          <span class="flex">
+            <span class="player__title">Bruno Mars</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Bruno Mars  Thats What I Like Official Music Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Viva la vida.webp" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Viva La Vida</b>
+          <span class="flex">
+            <span class="player__title">Coldplay</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Coldplay  Viva La Vida Official Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/GodPlan.jpg" alt="cover"/>
+        <p class="player__context">
+          <b class="player__song-name">Gods Plan</b>
+          <span class="flex">
+            <span class="player__title">Drake</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Drake  Gods Plan.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Negro Cirilo.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">EN VENTA NEGRO CIRILO</b>
+          <span class="flex">
+            <span class="player__title">INSTRUMENTAL DE RANCHA</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - EN VENTA NEGRO CIRILO  INSTRUMENTAL DE RANCHA Prod By TAVO THE PRODUCER.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/I dont want to set the world on Fire.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name"> I dont want to set the world on Fire</b>
+          <span class="flex">
+            <span class="player__title">The Ink Spots</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - I dont want to set the world on Fire  The Ink Spots LetraLyrics.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Believer.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Believer</b>
+          <span class="flex">
+            <span class="player__title">Imagine Dragons</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Imagine Dragons  Believer Official Music Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/506.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">506</b>
+          <span class="flex">
+            <span class="player__title">Morat Juanes</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Morat Juanes  506.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Dead.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Dead</b>
+          <span class="flex">
+            <span class="player__title"> My Chemical Romance</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - My Chemical Romance  Dead.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Drivers License.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Drivers license</b>
+          <span class="flex">
+            <span class="player__title">Olivia Rodrigo</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Olivia Rodrigo  drivers license Official Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/La leyenda del hada y el mago.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">La Leyenda Del Hada Y El Mago Audio</b>
+          <span class="flex">
+            <span class="player__title">Rata Blanca</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Rata Blanca  La Leyenda Del Hada Y El Mago Audio.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src= "Imagenes/Youtiful.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Youtiful</b>
+          <span class="flex">
+            <span class="player__title">Stray Kids</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Stray Kids Youtiful Video.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Young Beautiful.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Young Beautiful</b>
+          <span class="flex">
+            <span class="player__title">Lana del Rey</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Young  Beautiful  Lana Del Rey DH Orchestral Version.mp3"></audio>
+      </li>
+
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/She loves me not.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">She Loves Me Not</b>
+          <span class="flex">
+            <span class="player__title">Papa Roach</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Papa Roach  She Loves Me Not.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Devuelveme.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Devuélveme</b>
+          <span class="flex">
+            <span class="player__title">Ozuna</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Ozuna  Devuélveme   Video Oficial .mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Una Locura.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Una Locura</b>
+          <span class="flex">
+            <span class="player__title">Ozuna x Chencho Corleone</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Ozuna x J Balvin x Chencho Corleone  Una Locura Video Oficial.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Sunflower.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Sunflower</b>
+          <span class="flex">
+            <span class="player__title">Post Malone Swae Lee</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Post Malone Swae Lee  Sunflower SpiderMan Into the SpiderVerse.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Quedate.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">BZRP Music Sessions 52</b>
+          <span class="flex">
+            <span class="player__title">Quevedo</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - QUEVEDO  BZRP Music Sessions 52.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Falling in love.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Falling in Love </b>
+          <span class="flex">
+            <span class="player__title">Elvis Presley</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Elvis Presley  Cant Help Falling In Love Audio.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Enemy_Imagine_Dragons.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Enemy</b>
+          <span class="flex">
+            <span class="player__title">Imagine Dragons</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Imagine Dragons x JID  Enemy from the series Arcane League of Legends.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Vale la pena.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Vale La pena</b>
+          <span class="flex">
+            <span class="player__title">Juan Luis Guerra</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Juan Luis Guerra 440  Vale la Pena Live Video Oficial.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Las Monjitas.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Las Monjitas</b>
+          <span class="flex">
+            <span class="player__title">Grupo Exterminador</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Las Monjitas  Grupo Exterminador Letra.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Uptown funk.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Uptown Funk</b>
+          <span class="flex">
+            <span class="player__title">Mark Ronson</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Mark Ronson  Uptown Funk Official Video ft Bruno Mars.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Snowman.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">Snowman</b>
+          <span class="flex">
+            <span class="player__title">Sia</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - Sia  Snowman.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/Real Slim Shady.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">The Real Slim Shady</b>
+          <span class="flex">
+            <span class="player__title">Eminem</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - The Real Slim Shady.mp3"></audio>
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="Imagenes/ChopSueyEurope.jpg" alt="cover" />
+        <p class="player__context">
+          <b class="player__song-name">System of A Down</b>
+          <span class="flex">
+            <span class="player__title">Chop Suey</span>
+            <span class="player__song-time"></span>
+          </span>
+        </p>
+        <audio class="audio" src="Canciones/y2mate.com - System Of A Down  Chop Suey Official HD Video.mp3"></audio>
+      </li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
